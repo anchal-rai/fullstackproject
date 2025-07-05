@@ -1,0 +1,31 @@
+extends base
+
+block content
+  h2(style='color: #2c3e50; margin-bottom: 20px;') Welcome to HomeService Pro!
+  
+  p(style='margin-bottom: 20px;') Hello #{name},</p>
+  p(style='margin-bottom: 20px;') Thank you for joining HomeService Pro as a 
+    strong #{userType}
+    | . We're excited to have you on board!
+  
+  .cta(style='margin: 30px 0; text-align: center;')
+    a.btn(href=url, style='padding: 12px 24px;') Get Started
+  
+  p(style='margin-bottom: 15px;') With HomeService Pro, you can:
+  
+  ul(style='margin: 15px 0 25px 20px; padding: 0;')
+    if userType === 'customer'
+      li(style='margin-bottom: 8px;') Find and book professional home service providers
+      li(style='margin-bottom: 8px;') Schedule services at your convenience
+      li(style='margin-bottom: 8px;') Get real-time updates on your bookings
+    else
+      li(style='margin-bottom: 8px;') Showcase your skills to potential customers
+      li(style='margin-bottom: 8px;') Manage your bookings and schedule
+      li(style='margin-bottom: 8px;') Get paid securely through our platform
+  
+  p(style='margin-bottom: 20px;') If you have any questions or need assistance, feel free to contact our support team.
+  
+  .info-box(style='background-color: #e8f5e9; border-left: 4px solid #4CAF50; padding: 15px; margin: 20px 0;')
+    p(style='margin: 0; color: #1b5e20;')
+      strong Need help? 
+      | Our support team is here to assist you with any questions or concerns.
